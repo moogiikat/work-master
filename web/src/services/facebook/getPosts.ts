@@ -37,7 +37,11 @@ export const getPosts = async (currentPage?: string) => {
   }).then((response) => response.json());
 
   const parsedData = safeParse(FbPostSchema, posts);
-  console.log(parsedData);
+
+  if (!parsedData || typeof parsedData !== "object") {
+    throw new Error("INVALID_FACEBOOK_DATA");
+  }
+
   if (!parsedData.success) {
     throw Error("INVALID_FACEBOOK_DATA");
   }
