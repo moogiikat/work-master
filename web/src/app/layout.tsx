@@ -18,11 +18,10 @@ export const metadata: Metadata = {
     "Барилга угсралт, Интерьер зураг төсөл гүйцэтгэл, тавилга үйлдвэрлэл.",
 };
 
-const RootLayout: React.Layout = ({ children, params: { lang } }) => {
+const RootLayout: React.Layout = ({ children }) => {
   return (
     <html lang="en">
       <head />
-
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

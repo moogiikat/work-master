@@ -10,9 +10,6 @@ import { PageLayout } from "@/components/page_layout";
 import { Pagination } from "@/components/pagination";
 import { getPosts } from "@/services/facebook/getPosts";
 
-// export const dynamic = "force-static";
-// export const revalidate = 10;
-
 export const generateStaticParams = async () => {
   const posts = await getPosts();
   const totalPage = posts.meta.totalPage;

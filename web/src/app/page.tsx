@@ -1,13 +1,11 @@
 import React from "react";
 
-import { Works } from "./works";
 import { Posts } from "./posts";
 
 import { Banner } from "./banner";
-import { getPosts } from "@/services/facebook/getPosts";
 import { PageLayout } from "@/components/page_layout";
 
-export default function Home() {
+const TopPage: React.Page = () => {
   return (
     <div>
       <Banner />
@@ -19,4 +17,5 @@ export default function Home() {
       </PageLayout>
     </div>
   );
-}
+};
+export default TopPage;

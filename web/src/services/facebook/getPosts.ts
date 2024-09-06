@@ -38,13 +38,10 @@ export const getPosts = async (currentPage?: string) => {
 
   const parsedData = safeParse(FbPostSchema, posts);
 
-  if (!parsedData || typeof parsedData !== "object") {
-    throw new Error("INVALID_FACEBOOK_DATA");
-  }
-
   if (!parsedData.success) {
     throw Error("INVALID_FACEBOOK_DATA");
   }
+
   const data = parsedData.output.data.filter((item) => item.message);
 
   const page = currentPage ? parseInt(currentPage) : 1;

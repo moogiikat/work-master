@@ -14,7 +14,7 @@ export const Posts: React.FC = () => {
     <div className="flex flex-col gap-y-5">
       {posts.data.slice(0, 5).map((item, index) => (
         <Link
-          key={`post-${index}`}
+          key={`posts-${index}`}
           href={item.permalink_url}
           className={cn(
             "flex border-b items-center justify-between",
