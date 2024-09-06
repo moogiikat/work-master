@@ -1,5 +1,6 @@
 import { ModeToggle } from "@/components/ui";
 import Image from "next/image";
+import Link from "next/link";
 
 const links = [
   { href: "/", text: "About Us" },
@@ -11,7 +12,14 @@ export const Header = () => {
     <header className="bg-black dark:bg-white top-0 absolute w-full z-10">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center justify-between gap-x-4">
-          <Image src={"/workmaster/logo.jpeg"} alt={"logo"} width={40} height={40}></Image>
+          <Link href="/">
+            <Image
+              src={"/workmaster/logo.jpeg"}
+              alt={"logo"}
+              width={40}
+              height={40}
+            ></Image>
+          </Link>
           <ModeToggle />
         </div>
         <div className="flex space-x-4">

@@ -6,10 +6,10 @@ import { FacebookPostSchema } from "@/schemas/facebook_post";
 const FbPostSchema = object({
   data: array(FacebookPostSchema),
   paging: object({
-    cursors: object({
-      after: string(),
-      before: string(),
-    }),
+    // cursors: object({
+    //   after: string(),
+    //   before: string(),
+    // }),
     previous: optional(string()),
     next: optional(string()),
   }),
