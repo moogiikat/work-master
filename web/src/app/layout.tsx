@@ -10,8 +10,9 @@ import { Footer } from "./footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Raiko tech",
-  description: "Raiko tech is a software development company",
+  title: "Workmaster LLC",
+  description:
+    "Барилга угсралт, Интерьер зураг төсөл гүйцэтгэл, тавилга үйлдвэрлэл.",
 };
 
 export default function RootLayout({

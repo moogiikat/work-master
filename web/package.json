@@ -22,7 +22,8 @@
     "react-dom": "^18",
     "simplex-noise": "^4.0.3",
     "tailwind-merge": "^2.5.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "valibot": "^0.41.0"
   },
   "devDependencies": {
     "@types/node": "^20",
