@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { ThemeProvider } from "@/components/ui";
+import { ClientTransitionLoader } from "@/components/client_transition_loader";
+import { GlobalTransitionProvider } from "@/components/global_transition";
 
 import { Header } from "./header";
 import { Footer } from "./footer";
@@ -16,14 +18,11 @@ export const metadata: Metadata = {
     "Барилга угсралт, Интерьер зураг төсөл гүйцэтгэл, тавилга үйлдвэрлэл.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const RootLayout: React.Layout = ({ children, params: { lang } }) => {
   return (
     <html lang="en">
       <head />
+
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -36,7 +35,10 @@ export default function RootLayout({
               <Header />
             </div>
             <div className="w-full flex-auto bg-white dark:bg-black">
-              {children}
+              <GlobalTransitionProvider>
+                {children}
+                <ClientTransitionLoader />
+              </GlobalTransitionProvider>
             </div>
             <Footer />
           </div>
@@ -44,4 +46,5 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+export default RootLayout;
