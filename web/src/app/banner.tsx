@@ -23,9 +23,12 @@ export function Banner() {
         <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4 text-center">
           Барилга угсралт, Интерьер зураг төсөл гүйцэтгэл, тавилга үйлдвэрлэл.
         </div>
-        <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2 animate-bounce">
-          contact us
-        </button>
+        <a
+          href="tel:+97699232628"
+          className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2 animate-bounce"
+        >
+          Холбоо барих
+        </a>
       </motion.div>
     </AuroraBackground>
   );
