@@ -12,17 +12,16 @@ export const GoogleMapEmbed: React.FC = () => {
       ></iframe>
       <div className="flex flex-col gap-y-2">
         <p>
-          Хаяг: Баянзүрх дүүрэг, 3-р хороо, Токиогийн гудамж, "MILLENIUM PLAZA",
-          1305 тоот, Ulaanbaatar, Mongolia
+          {
+            " Хаяг: Баянзүрх дүүрэг, 3-р хороо, Токиогийн гудамж, MILLENIUM PLAZA 1305 тоот, Ulaanbaatar, Mongolia"
+          }
         </p>
         <p>
           Утас: <a href="tel:+97699232628">+97699232628</a>
         </p>
         <p>
           И-мэйл:
-          <a href="mailto:mailto:info@workmaster.mn">
-            {" info@workmaster.mn"}
-          </a>
+          <a href="mailto:mailto:info@workmaster.mn">{" info@workmaster.mn"}</a>
         </p>
       </div>
     </div>
