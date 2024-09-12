@@ -27,9 +27,9 @@ const NewsPage: React.Page<{ page: string }> = ({ params: { page } }) => {
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <PageLayout className="pb-20">
+      <PageLayout className="py-20">
         <div className="flex flex-col items-center">
-          <h1 className={cn("text-brownPrimary text-h1", "md:text-[56px]")}>
+          <h1 className={cn("text-brownPrimary text-2xl", "md:text-3xl")}>
             {"Шинэ мэдээлэл"}
           </h1>
           <p className="text-brownSecondary text-sm">

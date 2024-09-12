@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const links = [
-  { href: "/news", text: "Мэдээ" },
+  { href: "/news/1", text: "Мэдээ" },
 ];
 
 export const Header = () => {

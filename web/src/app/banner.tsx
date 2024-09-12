@@ -20,7 +20,7 @@ export function Banner() {
         <div className="text-4xl md:text-7xl font-bold dark:text-white text-center">
           Workmaster LLC
         </div>
-        <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4 text-center">
+        <div className="font-extralight text-xl md:text-4xl dark:text-neutral-200 py-4 text-center">
           Барилга угсралт, Интерьер зураг төсөл гүйцэтгэл, тавилга үйлдвэрлэл.
         </div>
         <a

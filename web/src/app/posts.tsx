@@ -38,7 +38,7 @@ export const Posts: React.FC = () => {
           </div>
         </Link>
       ))}
-      <Link href={"/news"} className="pt-10">
+      <Link href={"/news/1"} className="pt-10 item-end flex justify-end">
         <Button className="text-white w-[300px] dark:text-black">
           {"Бүгдийг үзэх"}
         </Button>
