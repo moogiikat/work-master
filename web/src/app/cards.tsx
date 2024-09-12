@@ -3,23 +3,23 @@ import { FocusCards } from "@/components/ui/focus-cards";
 export function Cards() {
   const cards = [
     {
-      title: "Forest Adventure",
-      src: "/workmaster/projects/job1-1.jpeg",
+      title: "ОТ ийн Мазаалай төсөл",
+      src: "/workmaster/projects/mazaalai.jpg",
     },
     {
-      title: "Mountain Adventure",
+      title: "NARAN RESIDENCE",
       src: "/workmaster/projects/job1-2.jpeg",
     },
     {
-      title: "Beach Adventure",
+      title: "NARAN RESIDENCE",
       src: "/workmaster/projects/job1-3.jpeg",
     },
     {
-      title: "Desert Adventure",
+      title: "NARAN RESIDENCE",
       src: "/workmaster/projects/job1-4.jpeg",
     },
     {
-      title: "City Adventure",
+      title: "оффисын интерьер",
       src: "/workmaster/projects/project1.jpeg",
     },
     {

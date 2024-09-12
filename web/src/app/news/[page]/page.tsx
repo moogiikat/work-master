@@ -32,7 +32,7 @@ const NewsPage: React.Page<{ page: string }> = ({ params: { page } }) => {
           <h1 className={cn("text-brownPrimary text-2xl", "md:text-3xl")}>
             {"Шинэ мэдээлэл"}
           </h1>
-          <p className="text-brownSecondary text-sm">
+          <p className="text-brownSecondary text-sm md:text-xl">
             {"Манай компанийн сүүлийн мэдээлэл"}
           </p>
         </div>
